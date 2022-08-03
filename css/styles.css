@@ -723,12 +723,22 @@ font-family: 'Roboto';
     border-color: #FFFFFF;
     border-radius: 50%;
     background-image: url(../images/close.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     border-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     margin-top: 10px;
     margin-right: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.close:hover {
+    background-image: url(../images/close-blue.svg);
+}
+
+
 
 
 /* PORTFOLIO */
@@ -830,7 +840,92 @@ font-family: 'Roboto';
     color: #FFFFFF;
 }
 
+/* ФОРМА ФУТЕРА */
 
+.form-footer {
+    margin-left: 95px;
+    margin-top: 12px;
+}
+
+.form-span-footer {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.input-footer {
+    position: relative;
+    margin-top: 35px;
+    background-color: #2F303A;
+    width: 360px;
+    height: 50px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+
+.input-footer::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-footer {
+    width: 200px;
+    display: inline-block;
+    padding: 0;
+    margin-left: 10px;
+    background: #2196F3;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 30px;
+    background-image: url(../images/icon-send.svg);
+    background-repeat: no-repeat;
+    background-position: 150px 50%;
+    cursor: pointer;
+}
+
+.button-text {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.svg-form-footer {
+    display: inline-block;
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+
+
+
+
+/* ПОРТФОЛИО КАРД */
 
 .portfolio-card:hover .text-hover {
     transform: translateY(0);
@@ -852,4 +947,204 @@ font-family: 'Roboto';
 
 .btn { 
     padding: 6px 22px;
+}
+
+
+/* ФОРМА МОДАЛКИ */
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.h-modal {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin: 40px 40px 0;
+}
+
+.label-modal {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.input-modal {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 450px;
+    height: 40px;
+    padding-left: 42px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+
+.textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 450px;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+
+.textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    text-align: top;
+}
+
+.label-checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-checkbox {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.text-checkbox-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+
+.button-modal {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button-text-modal {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+
+.check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/not-check.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 8px;
+    margin-top: 9px;
+}
+
+.check-input:checked + .checkbox {
+    display: inline-block;
+    background-image: url(../images/check.svg);
+    background-position: 50% 0;
+}
+
+.input-name {
+    background-image: url(../images/person.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+}
+
+.input-name:focus {
+    background-image: url(../images/person-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+    outline: none;
+    border: 1px solid #2196F3;
+}
+
+.input-tel {
+    background-image: url(../images/phone.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+}
+
+.input-tel:focus {
+    background-image: url(../images/phone-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+    outline: none;
+    border: 1px solid #2196F3;
+}
+
+.input-mail {
+    background-image: url(../images/email.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+}
+
+.input-mail:focus {
+    background-image: url(../images/email-blue.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+    outline: none;
+    border: 1px solid #2196F3;
+}
+
+.textarea:focus {
+    outline: none;
+    border: 1px solid #2196F3;
 }

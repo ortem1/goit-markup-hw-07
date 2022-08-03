@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
 <!--Шапка профиля-->
 
 <header>
@@ -61,7 +62,7 @@
                     <h1 class="title-main">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 </div>
                          <button data-modal-open class="main-btn">Заказать услугу</button>
-                 </div>
+                </div>
 
         </section>
 
@@ -346,6 +347,7 @@
     <!--Подвал-->
 
     <footer class="footer">
+
         <div class="div-footer">
             <div class="logo-contacts">
                 <div class="div-logo">
@@ -390,7 +392,21 @@
                     </a>
                 </ul>
             </div>
+                    <form class="form-footer">
+                            <label>
+                                <span class="form-span-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
+                                <input class="input-footer" type="text" name="mail" placeholder="E-mail">
+                            </label>
+                                <button class="button-footer" type="submit">
+                                    <span class="button-text">
+                                        Подписаться
+                                    </span>
+                                </button>
+                        
+                    </form>
         </div>
+
+
         
         
     </footer>
@@ -398,6 +414,35 @@
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <button data-modal-close class="close"></button>
+            <form class="form-modal">
+                <h4 class="h-modal">Оставьте свои данные, мы вам перезвоним</h4>
+                <label class="label-modal">
+                    <span class="span-text">Имя</span>
+                    <input class="input-modal input-name" type="text" name="name">
+                </label>
+                <label class="label-modal">
+                    <span class="span-text">Телефон</span>
+                    <input class="input-modal input-tel" type="tel" name="tel">
+                </label>
+                <label class="label-modal">
+                    <span class="span-text">Почта</span>
+                    <input class="input-modal input-mail" type="mail" name="mail">
+                </label>
+                <label class="label-modal">
+                    <span class="span-text">Комментарий</span>
+                    <textarea class="textarea" placeholder="Введите текст" name="textarea" cols="30" rows="10"></textarea>
+                </label>
+                <label class="label-checkbox">
+                    <input class="check-input" type="checkbox" name="checkbox">
+                    <span class="checkbox"></span>
+                    <span class="text-checkbox">
+                        Соглашаюсь с рассылкой и принимаю <a class="text-checkbox-2" href="">Условия договора</a>
+                    </span>
+                </label>
+                <button class="button-modal" type="submit">
+                    <span class="button-text-modal">Отправить</span>
+                </button>
+            </form>
         </div>
     </div>
 
